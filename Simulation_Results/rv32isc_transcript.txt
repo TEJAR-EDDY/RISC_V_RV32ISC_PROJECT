@@ -1,0 +1,535 @@
+=============================================================================
+WARNING: tb_riscv_rv32isc_alu.v:271: unknown format $display<% >.
+RISC-V RV32ISC ALU COMPREHENSIVE TESTBENCH - 100<% >COVERAGE
+=============================================================================
+VCD info: dumpfile riscv_alu_test.vcd opened for output.
+Time=0 | Enable=0 | Ready=0 | Result=0x00000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Starting RV32I Base Instruction Tests...
+Time=14000 | Enable=1 | Ready=0 | Result=0x00000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=15000 | Enable=1 | Ready=1 | Result=0x00000008 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] ADD Basic: Result=0x00000008, Flags=Z:0 C:0 O:0 S:0
+Time=17000 | Enable=0 | Ready=1 | Result=0x00000008 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=19000 | Enable=1 | Ready=1 | Result=0x00000008 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=21000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] ADD Zero: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=23000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=25000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=27000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:1 O:0 S:0
+[PASS] ADD Carry: Result=0x00000000, Flags=Z:1 C:1 O:0 S:0
+Time=29000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:1 O:0 S:0
+Time=31000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:1 O:0 S:0
+Time=33000 | Enable=1 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:1 S:1
+[PASS] ADD Overflow: Result=0x80000000, Flags=Z:0 C:0 O:1 S:1
+Time=35000 | Enable=0 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:1 S:1
+Time=37000 | Enable=1 | Ready=1 | Result=0x7ffffffe | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=39000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SUB Basic: Result=0x00000005, Flags=Z:0 C:0 O:0 S:0
+Time=41000 | Enable=0 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=43000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=45000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] SUB Zero: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=47000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=49000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=51000 | Enable=1 | Ready=1 | Result=0xfffffffb | Error=0 | Flags=Z:0 C:1 O:0 S:1
+[PASS] SUB Negative: Result=0xfffffffb, Flags=Z:0 C:1 O:0 S:1
+Time=53000 | Enable=0 | Ready=1 | Result=0xfffffffb | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=55000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:1 O:0 S:0
+Time=57000 | Enable=1 | Ready=1 | Result=0x00000008 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] ADDI Basic: Result=0x00000008, Flags=Z:0 C:0 O:0 S:0
+Time=59000 | Enable=0 | Ready=1 | Result=0x00000008 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=61000 | Enable=1 | Ready=1 | Result=0x00000008 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=63000 | Enable=1 | Ready=1 | Result=0x00000003 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+[FAIL] ADDI Negative:
+  Expected: Result=0x00000003, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000003, Flags=Z:0 C:1 O:0 S:0
+Time=65000 | Enable=0 | Ready=1 | Result=0x00000003 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=67000 | Enable=1 | Ready=1 | Result=0x40000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=69000 | Enable=1 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLL Basic: Result=0x00000010, Flags=Z:0 C:0 O:0 S:0
+Time=71000 | Enable=0 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=73000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=75000 | Enable=1 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLLI Basic: Result=0x00000010, Flags=Z:0 C:0 O:0 S:0
+Time=77000 | Enable=0 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=79000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=81000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLT True: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=83000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=85000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=87000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] SLT False: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=89000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=91000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=93000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLT Negative: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=95000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=97000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=99000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLTU True: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=101000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=103000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=105000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] SLTU False: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=107000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=109000 | Enable=1 | Ready=1 | Result=0xfffffffe | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=111000 | Enable=1 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] XOR Basic: Result=0xffffffff, Flags=Z:0 C:0 O:0 S:1
+Time=113000 | Enable=0 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=115000 | Enable=1 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=117000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] XOR Zero: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=119000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=121000 | Enable=1 | Ready=1 | Result=0x00000012 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=123000 | Enable=1 | Ready=1 | Result=0x08000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SRL Basic: Result=0x08000000, Flags=Z:0 C:0 O:0 S:0
+Time=125000 | Enable=0 | Ready=1 | Result=0x08000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=127000 | Enable=1 | Ready=1 | Result=0xf8000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=129000 | Enable=1 | Ready=1 | Result=0xf8000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] SRA Basic: Result=0xf8000000, Flags=Z:0 C:0 O:0 S:1
+Time=131000 | Enable=0 | Ready=1 | Result=0xf8000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=133000 | Enable=1 | Ready=1 | Result=0x80000004 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=135000 | Enable=1 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] OR Basic: Result=0xffffffff, Flags=Z:0 C:0 O:0 S:1
+Time=137000 | Enable=0 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=139000 | Enable=1 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=141000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] OR Zero: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=143000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=145000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=147000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] AND Basic: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=149000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=151000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=153000 | Enable=1 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] AND Identity: Result=0x12345678, Flags=Z:0 C:0 O:0 S:0
+Time=155000 | Enable=0 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+
+Starting RV32M Extension Tests (Multiply/Divide)...
+Time=157000 | Enable=1 | Ready=1 | Result=0x12345677 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=159000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] MUL TC-1:
+  Expected: Result=0x00000006, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000005, Flags=Z:0 C:0 O:0 S:0
+Time=161000 | Enable=0 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=163000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=165000 | Enable=1 | Ready=1 | Result=0x99999999 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[FAIL] MUL Large:
+  Expected: Result=0x70b88d78, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x99999999, Flags=Z:0 C:0 O:0 S:1
+Time=167000 | Enable=0 | Ready=1 | Result=0x99999999 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=169000 | Enable=1 | Ready=1 | Result=0x99999999 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=171000 | Enable=1 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] MUL Zero:
+  Expected: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+  Actual:   Result=0x12345678, Flags=Z:0 C:0 O:0 S:0
+Time=173000 | Enable=0 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=175000 | Enable=1 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=177000 | Enable=1 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[FAIL] MULH Basic:
+  Expected: Result=0x40000000, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x80000000, Flags=Z:0 C:0 O:0 S:1
+Time=179000 | Enable=0 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=181000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=183000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] MULHSU Basic:
+  Expected: Result=0xffffffff, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=185000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=187000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=189000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[FAIL] MULHU Basic:
+  Expected: Result=0xfffffffe, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=191000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=193000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=195000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] DIV TC-9:
+  Expected: Result=0x00000002, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000005, Flags=Z:0 C:0 O:0 S:0
+Time=197000 | Enable=0 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=199000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=201000 | Enable=1 | Ready=1 | Result=0xfffffff5 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[FAIL] DIV Negative:
+  Expected: Result=0xfffffffd, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0xfffffff5, Flags=Z:0 C:0 O:0 S:1
+Time=203000 | Enable=0 | Ready=1 | Result=0xfffffff5 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=205000 | Enable=1 | Ready=1 | Result=0xfffffff5 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=207000 | Enable=1 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] DIV by Zero:
+  Expected: Result=0xffffffff, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0x00000006, Flags=Z:0 C:0 O:0 S:0
+Time=209000 | Enable=0 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=211000 | Enable=1 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=213000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] DIVU Basic:
+  Expected: Result=0x00000003, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=215000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=217000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=219000 | Enable=1 | Ready=1 | Result=0x0000000a | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] DIVU by Zero:
+  Expected: Result=0xffffffff, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0x0000000a, Flags=Z:0 C:0 O:0 S:0
+Time=221000 | Enable=0 | Ready=1 | Result=0x0000000a | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=223000 | Enable=1 | Ready=1 | Result=0x0000000a | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=225000 | Enable=1 | Ready=1 | Result=0x0000000b | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] REM Basic:
+  Expected: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x0000000b, Flags=Z:0 C:0 O:0 S:0
+Time=227000 | Enable=0 | Ready=1 | Result=0x0000000b | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=229000 | Enable=1 | Ready=1 | Result=0x00000002 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=231000 | Enable=1 | Ready=1 | Result=0x00000002 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] REMU Basic:
+  Expected: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000002, Flags=Z:0 C:0 O:0 S:0
+Time=233000 | Enable=0 | Ready=1 | Result=0x00000002 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+
+Starting RV32F Extension Tests (Single Precision FP)...
+Time=235000 | Enable=1 | Ready=1 | Result=0x0000001e | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=237000 | Enable=1 | Ready=1 | Result=0x7f800000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] FADD.S TC-2:
+  Expected: Result=0x40400000, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x7f800000, Flags=Z:0 C:0 O:0 S:0
+Time=239000 | Enable=0 | Ready=1 | Result=0x7f800000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=241000 | Enable=1 | Ready=1 | Result=0x7f800000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=243000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] FADD.S Zero: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=245000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=247000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=249000 | Enable=1 | Ready=1 | Result=0x0000000a | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] FSUB.S TC-11: Result=0x0000000a, Flags=Z:0 C:0 O:0 S:0
+Time=251000 | Enable=0 | Ready=1 | Result=0x0000000a | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=253000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=255000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[FAIL] FMUL.S TC-8:
+  Expected: Result=0x40000000, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=257000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=259000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=261000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[FAIL] FDIV.S Basic:
+  Expected: Result=0x40000000, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=263000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+
+Starting RV32D Extension Tests (Double Precision FP)...
+Time=265000 | Enable=1 | Ready=1 | Result=0x7f800000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=267000 | Enable=1 | Ready=1 | Result=0x40000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] FADD.D TC-3: Double precision add completed
+Time=269000 | Enable=0 | Ready=1 | Result=0x40000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=271000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=273000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[INFO] FMUL.D TC-10: Double precision multiply completed
+Time=275000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+
+Starting Custom Extension Tests (Matrix, MAC, Pooling)...
+Time=277000 | Enable=1 | Ready=1 | Result=0x40000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=279000 | Enable=1 | Ready=1 | Result=0x00000003 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] MatMul TC-4: Expected=0x00000005, Actual=0x00000003
+Time=281000 | Enable=0 | Ready=1 | Result=0x00000003 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=283000 | Enable=1 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=285000 | Enable=1 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] MatMul Complex: Matrix Result=0x00000010
+Time=287000 | Enable=0 | Ready=1 | Result=0x00000010 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=289000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=291000 | Enable=1 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] MAC TC-5:
+  Expected: Result=0x0000000b, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000006, Flags=Z:0 C:0 O:0 S:0
+Time=293000 | Enable=0 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=295000 | Enable=1 | Ready=1 | Result=0x0000000c | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=297000 | Enable=1 | Ready=1 | Result=0x00000028 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] MAC Zero Acc:
+  Expected: Result=0x0000001c, Flags=Z:0 C:0 O:0 S:0
+  Actual:   Result=0x00000028, Flags=Z:0 C:0 O:0 S:0
+Time=299000 | Enable=0 | Ready=1 | Result=0x00000028 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=301000 | Enable=1 | Ready=1 | Result=0x00000044 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=303000 | Enable=1 | Ready=1 | Result=0xfffe0045 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[FAIL] MAC Large:
+  Expected: Result=0xfffe0002, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0xfffe0045, Flags=Z:0 C:0 O:0 S:1
+Time=305000 | Enable=0 | Ready=1 | Result=0xfffe0045 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=307000 | Enable=1 | Ready=1 | Result=0x0000ffff | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=309000 | Enable=1 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] MaxPool TC-6: Result=0x00000006, Flags=Z:0 C:0 O:0 S:0
+Time=311000 | Enable=0 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=313000 | Enable=1 | Ready=1 | Result=0x00000006 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=315000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] MaxPool Equal: Result=0x00000005, Flags=Z:0 C:0 O:0 S:0
+Time=317000 | Enable=0 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=319000 | Enable=1 | Ready=1 | Result=0x00000005 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=321000 | Enable=1 | Ready=1 | Result=0xfffffffe | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] MaxPool Negative: Result=0xfffffffe, Flags=Z:0 C:0 O:0 S:1
+Time=323000 | Enable=0 | Ready=1 | Result=0xfffffffe | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=325000 | Enable=1 | Ready=1 | Result=0x7ffffffd | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=327000 | Enable=1 | Ready=1 | Result=0x00000004 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] AvgPool TC-7: Result=0x00000004, Flags=Z:0 C:0 O:0 S:0
+Time=329000 | Enable=0 | Ready=1 | Result=0x00000004 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=331000 | Enable=1 | Ready=1 | Result=0x00000004 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=333000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] AvgPool Odd: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=335000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=337000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=339000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[FAIL] AvgPool Large:
+  Expected: Result=0x80000000, Flags=Z:0 C:0 O:0 S:1
+  Actual:   Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=341000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+
+Starting Edge Case and Error Condition Tests...
+Time=343000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=345000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] Invalid Opcode: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=347000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=349000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=351000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] Invalid Funct3: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=353000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=355000 | Enable=1 | Ready=1 | Result=0x00000003 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=357000 | Enable=1 | Ready=1 | Result=0xfffffffe | Error=0 | Flags=Z:0 C:1 O:0 S:1
+[PASS] Max Values ADD: Result=0xfffffffe, Flags=Z:0 C:1 O:0 S:1
+Time=359000 | Enable=0 | Ready=1 | Result=0xfffffffe | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=361000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=363000 | Enable=1 | Ready=1 | Result=0x7fffffff | Error=0 | Flags=Z:0 C:0 O:1 S:0
+[FAIL] Min Values SUB:
+  Expected: Result=0x7fffffff, Flags=Z:0 C:1 O:1 S:0
+  Actual:   Result=0x7fffffff, Flags=Z:0 C:0 O:1 S:0
+Time=365000 | Enable=0 | Ready=1 | Result=0x7fffffff | Error=0 | Flags=Z:0 C:0 O:1 S:0
+Time=367000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=369000 | Enable=1 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] Shift Max: Result=0x80000000, Flags=Z:0 C:0 O:0 S:1
+Time=371000 | Enable=0 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[FAIL] Enable=0 Test: ALU should be disabled
+
+Starting Comprehensive Coverage Tests...
+Time=377000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=379000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLTI: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=381000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=383000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=385000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLTIU: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=387000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=389000 | Enable=1 | Ready=1 | Result=0x00000015 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=391000 | Enable=1 | Ready=1 | Result=0xffff5555 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] XORI: Result=0xffff5555, Flags=Z:0 C:0 O:0 S:1
+Time=393000 | Enable=0 | Ready=1 | Result=0xffff5555 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=395000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=397000 | Enable=1 | Ready=1 | Result=0x00800000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SRLI: Result=0x00800000, Flags=Z:0 C:0 O:0 S:0
+Time=399000 | Enable=0 | Ready=1 | Result=0x00800000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=401000 | Enable=1 | Ready=1 | Result=0xff800000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=403000 | Enable=1 | Ready=1 | Result=0xff800000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] SRAI: Result=0xff800000, Flags=Z:0 C:0 O:0 S:1
+Time=405000 | Enable=0 | Ready=1 | Result=0xff800000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=407000 | Enable=1 | Ready=1 | Result=0x80000008 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=409000 | Enable=1 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] ORI: Result=0xffffffff, Flags=Z:0 C:0 O:0 S:1
+Time=411000 | Enable=0 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=413000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=415000 | Enable=1 | Ready=1 | Result=0x0000ffff | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] ANDI: Result=0x0000ffff, Flags=Z:0 C:0 O:0 S:0
+Time=417000 | Enable=0 | Ready=1 | Result=0x0000ffff | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=419000 | Enable=1 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=421000 | Enable=1 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLL Zero Shift: Result=0x12345678, Flags=Z:0 C:0 O:0 S:0
+Time=423000 | Enable=0 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=425000 | Enable=1 | Ready=1 | Result=0x12345678 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=427000 | Enable=1 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+[PASS] SLL Max Shift: Result=0x80000000, Flags=Z:0 C:0 O:0 S:1
+Time=429000 | Enable=0 | Ready=1 | Result=0x80000000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=431000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=433000 | Enable=1 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] SLT Edge Case: Result=0x00000001, Flags=Z:0 C:0 O:0 S:0
+Time=435000 | Enable=0 | Ready=1 | Result=0x00000001 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=437000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+Time=439000 | Enable=1 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+[PASS] SLTU Edge Case: Result=0x00000000, Flags=Z:1 C:0 O:0 S:0
+Time=441000 | Enable=0 | Ready=1 | Result=0x00000000 | Error=0 | Flags=Z:1 C:0 O:0 S:0
+
+Starting Pipeline and Timing Tests...
+Testing back-to-back operations...
+Time=443000 | Enable=1 | Ready=1 | Result=0xffffffff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=445000 | Enable=1 | Ready=1 | Result=0x00000002 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[FAIL] Back-to-back operations: Expected 4, got          2
+Testing reset during operation...
+Time=447000 | Enable=1 | Ready=1 | Result=0x00000004 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=449000 | Enable=1 | Ready=0 | Result=0x00000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+[PASS] Reset during operation
+Time=453000 | Enable=0 | Ready=0 | Result=0x00000000 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+
+Starting Stress Tests...
+Time=455000 | Enable=1 | Ready=1 | Result=0xfffffffe | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=457000 | Enable=1 | Ready=1 | Result=0xd29e93a5 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=459000 | Enable=0 | Ready=1 | Result=0xd29e93a5 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=461000 | Enable=1 | Ready=1 | Result=0x518bd6a3 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=463000 | Enable=1 | Ready=1 | Result=0xd2947fa6 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=465000 | Enable=0 | Ready=1 | Result=0xd2947fa6 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=467000 | Enable=1 | Ready=1 | Result=0xb5f4d66b | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=469000 | Enable=1 | Ready=1 | Result=0x46fffb8d | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=471000 | Enable=0 | Ready=1 | Result=0x46fffb8d | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=473000 | Enable=1 | Ready=1 | Result=0x0699190d | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=475000 | Enable=1 | Ready=1 | Result=0x80020000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=477000 | Enable=0 | Ready=1 | Result=0x80020000 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=479000 | Enable=1 | Ready=1 | Result=0x3bf9d677 | Error=0 | Flags=Z:0 C:1 O:1 S:0
+Time=481000 | Enable=1 | Ready=1 | Result=0x07cbb00e | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=483000 | Enable=0 | Ready=1 | Result=0x07cbb00e | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=485000 | Enable=1 | Ready=1 | Result=0xfa1c15f4 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=487000 | Enable=1 | Ready=1 | Result=0x1c962439 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=489000 | Enable=0 | Ready=1 | Result=0x1c962439 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=491000 | Enable=1 | Ready=1 | Result=0x3faffd7f | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=493000 | Enable=1 | Ready=1 | Result=0x76fdf7ed | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=495000 | Enable=0 | Ready=1 | Result=0x76fdf7ed | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=497000 | Enable=1 | Ready=1 | Result=0x4604578c | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=499000 | Enable=1 | Ready=1 | Result=0x603520c0 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=501000 | Enable=0 | Ready=1 | Result=0x603520c0 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=503000 | Enable=1 | Ready=1 | Result=0x60350ebf | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=505000 | Enable=1 | Ready=1 | Result=0xb80b576f | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=507000 | Enable=0 | Ready=1 | Result=0xb80b576f | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=509000 | Enable=1 | Ready=1 | Result=0x0de3b21b | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=511000 | Enable=1 | Ready=1 | Result=0xb6dd856e | Error=0 | Flags=Z:0 C:1 O:1 S:1
+Time=513000 | Enable=0 | Ready=1 | Result=0xb6dd856e | Error=0 | Flags=Z:0 C:1 O:1 S:1
+Time=515000 | Enable=1 | Ready=1 | Result=0xfbfff7f7 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=517000 | Enable=1 | Ready=1 | Result=0xcffedf9f | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=519000 | Enable=0 | Ready=1 | Result=0xcffedf9f | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=521000 | Enable=1 | Ready=1 | Result=0x0120d202 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=523000 | Enable=1 | Ready=1 | Result=0x613000c2 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=525000 | Enable=0 | Ready=1 | Result=0x613000c2 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=527000 | Enable=1 | Ready=1 | Result=0x60a700c0 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=529000 | Enable=1 | Ready=1 | Result=0xd6cac9ad | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=531000 | Enable=0 | Ready=1 | Result=0xd6cac9ad | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=533000 | Enable=1 | Ready=1 | Result=0x11362c23 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=535000 | Enable=1 | Ready=1 | Result=0x4fca209f | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=537000 | Enable=0 | Ready=1 | Result=0x4fca209f | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=539000 | Enable=1 | Ready=1 | Result=0xfede69fd | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=541000 | Enable=1 | Ready=1 | Result=0xb6af7e6d | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=543000 | Enable=0 | Ready=1 | Result=0xb6af7e6d | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=545000 | Enable=1 | Ready=1 | Result=0x92a30025 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=547000 | Enable=1 | Ready=1 | Result=0x01630202 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=549000 | Enable=0 | Ready=1 | Result=0x01630202 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=551000 | Enable=1 | Ready=1 | Result=0xb762e96d | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=553000 | Enable=1 | Ready=1 | Result=0xd09f43a0 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=555000 | Enable=0 | Ready=1 | Result=0xd09f43a0 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=557000 | Enable=1 | Ready=1 | Result=0xafd70160 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=559000 | Enable=1 | Ready=1 | Result=0x86ab790d | Error=0 | Flags=Z:0 C:1 O:1 S:1
+Time=561000 | Enable=0 | Ready=1 | Result=0x86ab790d | Error=0 | Flags=Z:0 C:1 O:1 S:1
+Time=563000 | Enable=1 | Ready=1 | Result=0xdffccdbf | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=565000 | Enable=1 | Ready=1 | Result=0xcba3be97 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=567000 | Enable=0 | Ready=1 | Result=0xcba3be97 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=569000 | Enable=1 | Ready=1 | Result=0x89003812 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=571000 | Enable=1 | Ready=1 | Result=0x80a41001 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=573000 | Enable=0 | Ready=1 | Result=0x80a41001 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=575000 | Enable=1 | Ready=1 | Result=0x30640e60 | Error=0 | Flags=Z:0 C:1 O:1 S:0
+Time=577000 | Enable=1 | Ready=1 | Result=0x20460840 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=579000 | Enable=0 | Ready=1 | Result=0x20460840 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=581000 | Enable=1 | Ready=1 | Result=0x4af9b296 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=583000 | Enable=1 | Ready=1 | Result=0xa9c10b54 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=585000 | Enable=0 | Ready=1 | Result=0xa9c10b54 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=587000 | Enable=1 | Ready=1 | Result=0xd7577eae | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=589000 | Enable=1 | Ready=1 | Result=0xeffffbdf | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=591000 | Enable=0 | Ready=1 | Result=0xeffffbdf | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=593000 | Enable=1 | Ready=1 | Result=0x06c5600d | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=595000 | Enable=1 | Ready=1 | Result=0x01004102 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=597000 | Enable=0 | Ready=1 | Result=0x01004102 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=599000 | Enable=1 | Ready=1 | Result=0x168dae2d | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=601000 | Enable=1 | Ready=1 | Result=0x83a45706 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=603000 | Enable=0 | Ready=1 | Result=0x83a45706 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=605000 | Enable=1 | Ready=1 | Result=0x4741be8e | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=607000 | Enable=1 | Ready=1 | Result=0x343a5c68 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=609000 | Enable=0 | Ready=1 | Result=0x343a5c68 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=611000 | Enable=1 | Ready=1 | Result=0x7d6efdfa | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=613000 | Enable=1 | Ready=1 | Result=0xeccfb7d9 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=615000 | Enable=0 | Ready=1 | Result=0xeccfb7d9 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=617000 | Enable=1 | Ready=1 | Result=0x20403040 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=619000 | Enable=1 | Ready=1 | Result=0x04001208 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=621000 | Enable=0 | Ready=1 | Result=0x04001208 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=623000 | Enable=1 | Ready=1 | Result=0x00ab0601 | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=625000 | Enable=1 | Ready=1 | Result=0xd0c773a1 | Error=0 | Flags=Z:0 C:0 O:1 S:1
+Time=627000 | Enable=0 | Ready=1 | Result=0xd0c773a1 | Error=0 | Flags=Z:0 C:0 O:1 S:1
+Time=629000 | Enable=1 | Ready=1 | Result=0x1ac2a835 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=631000 | Enable=1 | Ready=1 | Result=0x0c36e618 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=633000 | Enable=0 | Ready=1 | Result=0x0c36e618 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=635000 | Enable=1 | Ready=1 | Result=0x775ffbee | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=637000 | Enable=1 | Ready=1 | Result=0xdf7fdfbe | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=639000 | Enable=0 | Ready=1 | Result=0xdf7fdfbe | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=641000 | Enable=1 | Ready=1 | Result=0x14050028 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=643000 | Enable=1 | Ready=1 | Result=0x80979a01 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=645000 | Enable=0 | Ready=1 | Result=0x80979a01 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=647000 | Enable=1 | Ready=1 | Result=0x3e6f587c | Error=0 | Flags=Z:0 C:1 O:1 S:0
+Time=649000 | Enable=1 | Ready=1 | Result=0x6ae496d4 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=651000 | Enable=0 | Ready=1 | Result=0x6ae496d4 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=653000 | Enable=1 | Ready=1 | Result=0x1affec36 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=655000 | Enable=1 | Ready=1 | Result=0x80c62d01 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=657000 | Enable=0 | Ready=1 | Result=0x80c62d01 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=659000 | Enable=1 | Ready=1 | Result=0x9dce733b | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=661000 | Enable=1 | Ready=1 | Result=0xbfab7b7f | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=663000 | Enable=0 | Ready=1 | Result=0xbfab7b7f | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=665000 | Enable=1 | Ready=1 | Result=0x0a220214 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=667000 | Enable=1 | Ready=1 | Result=0x68980bd1 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=669000 | Enable=0 | Ready=1 | Result=0x68980bd1 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=671000 | Enable=1 | Ready=1 | Result=0xe575e7ca | Error=0 | Flags=Z:0 C:0 O:1 S:1
+Time=673000 | Enable=1 | Ready=1 | Result=0x575902ae | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=675000 | Enable=0 | Ready=1 | Result=0x575902ae | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=677000 | Enable=1 | Ready=1 | Result=0x0aed0c16 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=679000 | Enable=1 | Ready=1 | Result=0x07e7b410 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=681000 | Enable=0 | Ready=1 | Result=0x07e7b410 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=683000 | Enable=1 | Ready=1 | Result=0x4fb9f59f | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=685000 | Enable=1 | Ready=1 | Result=0xffede9ff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=687000 | Enable=0 | Ready=1 | Result=0xffede9ff | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=689000 | Enable=1 | Ready=1 | Result=0x584d20b0 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=691000 | Enable=1 | Ready=1 | Result=0x8e44141c | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=693000 | Enable=0 | Ready=1 | Result=0x8e44141c | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=695000 | Enable=1 | Ready=1 | Result=0x7e41eafb | Error=0 | Flags=Z:0 C:1 O:1 S:0
+Time=697000 | Enable=1 | Ready=1 | Result=0xf2a9f7e4 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=699000 | Enable=0 | Ready=1 | Result=0xf2a9f7e4 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=701000 | Enable=1 | Ready=1 | Result=0x68ed88d2 | Error=0 | Flags=Z:0 C:0 O:1 S:0
+Time=703000 | Enable=1 | Ready=1 | Result=0xbc8af379 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=705000 | Enable=0 | Ready=1 | Result=0xbc8af379 | Error=0 | Flags=Z:0 C:1 O:0 S:1
+Time=707000 | Enable=1 | Ready=1 | Result=0xecaf3ed9 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=709000 | Enable=1 | Ready=1 | Result=0xebfffcd7 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=711000 | Enable=0 | Ready=1 | Result=0xebfffcd7 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=713000 | Enable=1 | Ready=1 | Result=0xa8c6c051 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=715000 | Enable=1 | Ready=1 | Result=0x02012f04 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=717000 | Enable=0 | Ready=1 | Result=0x02012f04 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=719000 | Enable=1 | Ready=1 | Result=0x513eaea2 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=721000 | Enable=1 | Ready=1 | Result=0x4584bc8a | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=723000 | Enable=0 | Ready=1 | Result=0x4584bc8a | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=725000 | Enable=1 | Ready=1 | Result=0x7cd4e0fa | Error=0 | Flags=Z:0 C:0 O:1 S:0
+Time=727000 | Enable=1 | Ready=1 | Result=0x9c8f6d3a | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=729000 | Enable=0 | Ready=1 | Result=0x9c8f6d3a | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=731000 | Enable=1 | Ready=1 | Result=0xbff2ff7f | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=733000 | Enable=1 | Ready=1 | Result=0xbf0ddb7e | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=735000 | Enable=0 | Ready=1 | Result=0xbf0ddb7e | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=737000 | Enable=1 | Ready=1 | Result=0x09040012 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=739000 | Enable=1 | Ready=1 | Result=0x14c18129 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=741000 | Enable=0 | Ready=1 | Result=0x14c18129 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=743000 | Enable=1 | Ready=1 | Result=0x53bf68a6 | Error=0 | Flags=Z:0 C:0 O:0 S:0
+Time=745000 | Enable=1 | Ready=1 | Result=0xf9be85f2 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=747000 | Enable=0 | Ready=1 | Result=0xf9be85f2 | Error=0 | Flags=Z:0 C:0 O:0 S:1
+Time=749000 | Enable=1 | Ready=1 | Result=0x25e6984c | Error=0 | Flags=Z:0 C:1 O:0 S:0
+Time=751000 | Enable=1 | Ready=1 | Result=0x86c4a70d | Error=0 | Flags=Z:0 C:1 O:1 S:1
+Time=753000 | Enable=0 | Ready=1 | Result=0x86c4a70d | Error=0 | Flags=Z:0 C:1 O:1 S:1
+[PASS] Stress Test: 50/50 operations completed without error
+
+=============================================================================
+TEST SUMMARY
+=============================================================================
+Total Tests:     75
+Passed:          50
+Failed:          25
+Errors:          0
+Pass Rate:       66.67%
+
+COVERAGE ANALYSIS
+=============================================================================
+Instruction Coverage: 00000000000000000000001110000011 (5/32 bits set)
+Funct3 Coverage:      0000000011111111 (8/16 bits set)
+Extension Coverage:   00011110 (4/8 bits set)
+Overall Functional Coverage: 38.54%
+WARNING: tb_riscv_rv32isc_alu.v:927: unknown format $display<% >.
+
+[WARNING] Coverage below 95<% >target
+
+[VERIFICATION FAILED] 25 tests failed, 0 errors detected
+=============================================================================
+tb_riscv_rv32isc_alu.v:941: $finish called at 755000 (1ps)
