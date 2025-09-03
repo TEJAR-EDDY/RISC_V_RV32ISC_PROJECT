@@ -1,4 +1,4 @@
-## *RISC-V RV32ISC: DESIGN OF A CUSTOMIZEDRISC-V ISA-BASED ALU WITH PARTIAL IP-LEVEL VERIFICATION*
+## *RISC-V RV32ISC: DESIGN OF A CUSTOMIZED RISC-V ISA-BASED ALU WITH PARTIAL IP-LEVEL VERIFICATION*
 
 A high-performance RISC-V processor implementation with custom instruction set extensions optimized for deep learning operations in medical imaging applications.
 
@@ -219,5 +219,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 *Built with passion for processor design and medical technology innovation* 🚀
+
 
 
